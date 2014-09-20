@@ -18,7 +18,7 @@ public class ExerciseDataProcessingWorkflowLauncher {
         AmazonSimpleWorkflow service = new AmazonSimpleWorkflowClient(config);
         service.setEndpoint("https://swf.us-east-1.amazonaws.com");
         String domain = "student100";
-        String taskListToPoll = "student100ExerciseWorkflowTasks";
+        String taskListToPoll = "exerciseWorkflowTasks";
         WorkflowWorker wfw = new WorkflowWorker(service, domain, taskListToPoll);
         wfw.addWorkflowImplementationType(ExerciseDataProcessingWorkflowImpl.class);
         wfw.start();

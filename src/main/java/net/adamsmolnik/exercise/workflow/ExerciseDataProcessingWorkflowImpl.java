@@ -48,11 +48,15 @@ public class ExerciseDataProcessingWorkflowImpl implements ExerciseDataProcessin
 
     @Override
     public void launch(String bucketName, String srcObjectKey, Set<ExerciseActionType> actionTypes) {
-        this.bucketName = bucketName;
-        this.destObjectKey = srcObjectKey;
-        Promise<DetectionResponse> detectionResponse = detectionAC.detect(new DetectionRequest(srcObjectKey));
-        Promise<Void> waitForFinish = processDetectionResponse(detectionResponse);
-        persistOutcomeMetadata(waitForFinish);
+        /*
+        * Complete code here
+        * this.bucketName = bucketName;
+        * this.destObjectKey = srcObjectKey;
+        * Promise<DetectionResponse> detectionResponse = detectionAC.detect(new DetectionRequest(srcObjectKey));
+        * Promise<Void> waitForFinish = processDetectionResponse(detectionResponse);
+        * persistOutcomeMetadata(waitForFinish);
+        * Complete code here
+        */
     }
 
     @Asynchronous
