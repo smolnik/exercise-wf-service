@@ -1,4 +1,4 @@
-package net.adamsmolnik.setup.wf;
+package net.adamsmolnik.exercise.setup.wf;
 
 import java.util.Map;
 import javax.inject.Inject;
